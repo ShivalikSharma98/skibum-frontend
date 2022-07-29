@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from '../headers/header/Header'
 
 function Home() {
     return (
-        <div>
+        <div className='home'>
+            <Header />
             
         </div>
     );

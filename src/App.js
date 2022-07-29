@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home/Home';
 import Resorts from './components/resorts/Resorts';
 import Weather from './components/weather/Weather';
