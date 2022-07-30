@@ -28,7 +28,7 @@ function Header() {
 							</LinkContainer>
 							<NavDropdown title='Backcountry Forum' id='basic-nav-dropdown'>
 								<LinkContainer to='/posts'>
-									<NavDropdown.Item>Posts</NavDropdown.Item>
+									<NavDropdown.Item>Forum</NavDropdown.Item>
 								</LinkContainer>
 								<LinkContainer to='/posts/login'>
 									<NavDropdown.Item>My Posts</NavDropdown.Item>

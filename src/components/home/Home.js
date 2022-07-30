@@ -8,7 +8,7 @@ function Home() {
 		<div className='home'>
 			<Header />
 			<div className='home-items-container'>
-				<h1 className='title'>Ski Bum</h1>
+				<h1 className='glitch'>Ski Bum</h1>
 				<div className='resorts-item'>
 					<Link to='/resorts'>
 						<button className='button-49'>Resorts</button>
