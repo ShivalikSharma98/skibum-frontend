@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../headers/header/Header';
 
 function Resorts() {
     return (
-        <div>
-            
+        <div className='resots'>
+            <Header />
+            <h1>This is the resorts page</h1>
         </div>
     );
 }
