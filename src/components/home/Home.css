@@ -1,0 +1,31 @@
+.home {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+}
+
+.home-items-container {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.resorts-item,
+.weather-item,
+.gallery-item,
+.forum-item {
+	display: grid;
+	justify-self: center;
+	align-self: center;
+}
+
+.title {
+    padding: 10px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
