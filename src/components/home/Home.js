@@ -11,22 +11,22 @@ function Home() {
 				<h1 className='title'>Ski Bum</h1>
 				<div className='resorts-item'>
 					<Link to='/resorts'>
-						<button>Resorts</button>
+						<button className='button-49'>Resorts</button>
 					</Link>
 				</div>
 				<div className='weather-item'>
 					<Link to='/weather'>
-						<button>Weather</button>
+						<button className='button-49'>Weather</button>
 					</Link>
 				</div>
 				<div className='gallery-item'>
 					<Link to='/gallery'>
-						<button>Gallery</button>
+						<button className='button-49'>Gallery</button>
 					</Link>
 				</div>
 				<div className='forum-item'>
 					<Link to='/posts'>
-						<button>Backcountry Forum</button>
+						<button className='button-49'>Forum</button>
 					</Link>
 				</div>
 			</div>
