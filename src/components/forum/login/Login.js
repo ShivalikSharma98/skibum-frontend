@@ -1,16 +1,28 @@
 import React, { useState } from 'react';
 import Header from '../../headers/header/Header';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
-	const [username, setUsername] = useState(null);
+	const [username, setUsername] = useState('');
+	const navigate = useNavigate();
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		navigate(`/posts/${username}`, { replace: true });
+	}
+
+	function handleChange(event) {
+		event.preventDefault();
+		setUsername(event.target.value);
+	}
+
 	return (
 		<>
 			<Header />
 			<div className='login'>
 				<div className='login-form'>
-					<form>
+					<form onSubmit={handleSubmit}>
 						<h2 className='text-center'>Log in</h2>
 						<div className='form-group'>
 							<input
@@ -18,6 +30,7 @@ function Login() {
 								type='text'
 								className='form-control'
 								placeholder='Username'
+								onChange={handleChange}
 								required='required'
 							/>
 						</div>

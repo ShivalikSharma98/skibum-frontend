@@ -51,6 +51,9 @@ function SignUp() {
 							</button>
 						</div>
 					</form>
+					<p className='text-center'>
+						Passwords are currently not encrypted, do not use passwords associated with other accounts.
+					</p>
 				</div>
 			</div>
 		</>
