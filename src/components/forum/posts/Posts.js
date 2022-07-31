@@ -45,15 +45,13 @@ function Posts() {
 					{posts.map((post) => (
 						<Card className='forum-cards' key={post.id}>
 							<Card.Header className='forum-cards-header'>
-								<h3>{post.title}</h3>
+								<h4>{post.title}</h4>
+								<h5>By: {post.username}</h5>
 							</Card.Header>
 							<Card.Body>
-								<Card.Title>
-									<h4>By: {post.username}</h4>
-								</Card.Title>
-								<h6>Difficulty: {post.difficulty}</h6>
-								<h6>Start Location: {post.start_location}</h6>
-								<h6>End Location: {post.end_location}</h6>
+								<p>Difficulty: {post.difficulty}</p>
+								<p>Start Location: {post.start_location}</p>
+								<p>End Location: {post.end_location}</p>
 								<p>Directions: {post.directions}</p>
 								<p>{post.description}</p>
 							</Card.Body>
