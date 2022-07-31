@@ -1,0 +1,16 @@
+.posts {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+.posts-container {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('https://media3.giphy.com/media/Stnq4knP1DXKjUsXmb/giphy.gif?cid=ecf05e47dp02wj7atphh0buv8pnl25ia08zd6ujcf9chj30y&rid=giphy.gif&ct=s');
+	background-size: cover;
+}
