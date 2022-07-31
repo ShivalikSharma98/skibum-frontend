@@ -4,13 +4,28 @@
 	height: 100%;
 	width: 100%;
 	background-color: black;
+	background-image: url('https://media2.giphy.com/media/3ohs7T1ljes6v7EdFe/giphy.gif?cid=ecf05e47tl07smci9rayu8c5nu2eyuc02o7xqnsp30trwq7g&rid=giphy.gif&ct=s');
+	background-size: cover;
+	overflow: scroll;
 }
 
 .posts-container {
 	flex: 1 1 auto;
+	flex-direction: column;
+	gap: 20px;
+	margin: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('https://media3.giphy.com/media/Stnq4knP1DXKjUsXmb/giphy.gif?cid=ecf05e47dp02wj7atphh0buv8pnl25ia08zd6ujcf9chj30y&rid=giphy.gif&ct=s');
-	background-size: cover;
+}
+
+.forum-cards {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.85);
+    min-width: 333px;
+    max-width: 740px;
+}
+
+.forum-cards-header {
+    border-bottom: 1px solid white;
 }
