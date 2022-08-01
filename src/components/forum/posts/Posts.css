@@ -32,3 +32,17 @@
 .forum-cards-header {
     border-bottom: 1px solid white;
 }
+
+.user-cards-header {
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.div-buttons {
+	margin-left: 5px;
+}
+
+.noposts {
+	color: white;
+}

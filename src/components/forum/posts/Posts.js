@@ -26,10 +26,12 @@ function Posts() {
 
 	if (!posts.length) {
 		return (
-			<div className='posts'>
+			<>
 				<Header />
-				<h3>There are currently no posts on this forum</h3>
-			</div>
+				<div className='posts'>
+					<h3 className='noposts'>There are currently no posts on this forum</h3>
+				</div>
+			</>
 		);
 	}
 
@@ -37,12 +39,15 @@ function Posts() {
 		<>
 			<Header />
 			<div className='posts'>
-				<LinkContainer to='/posts/login'>
-					<button className='button-49'>Login</button>
-				</LinkContainer>
 				<div className='posts-container'>
 					<h1>Forum</h1>
-					<p>Please take all necessary Avalanche precautions before visiting these locations. </p>
+					<LinkContainer to='/posts/login'>
+						<button>Login</button>
+					</LinkContainer>
+					<p>
+						Please take all necessary Avalanche precautions before visiting
+						these locations.{' '}
+					</p>
 					{posts.map((post) => (
 						<Card className='forum-cards' key={post.id}>
 							<Card.Header className='forum-cards-header'>
