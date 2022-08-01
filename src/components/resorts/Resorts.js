@@ -9,9 +9,9 @@ function Resorts() {
 			<Header />
 			<div className='posts'>
 				<div className='posts-container'>
-					<h1>Top Resorts in Colorado</h1>
+					<h1>Popular Resorts in Colorado</h1>
 					{resortData.map((data) => (
-						<Card className='forum-cards'>
+						<Card className='forum-cards' key={data.id}>
 							<Card.Header className='forum-cards-header'>
 								<h4>{data.title}</h4>
 							</Card.Header>

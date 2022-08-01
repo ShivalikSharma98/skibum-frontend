@@ -1,5 +1,6 @@
 export const resortData = [
 	{
+		id: 1,
 		title: 'Aspen Snowmass',
 		pass: 'Ikon and Mountain Collective',
 		area: '3,362 acres',
@@ -10,6 +11,7 @@ export const resortData = [
 			'https://media.istockphoto.com/photos/ski-resort-in-the-rocky-mountains-with-sunset-picture-id1359232536?k=20&m=1359232536&s=612x612&w=0&h=68H0Qq_URAcMJOt8Oag7F1aow0_r1XhdsNuZArm_if4=',
 	},
 	{
+		id: 2,
 		title: 'Breckenridge',
 		pass: 'Epic',
 		area: '2,908 acres',
@@ -20,16 +22,18 @@ export const resortData = [
 			'https://media.istockphoto.com/photos/breckenridge-colorado-usa-town-winter-picture-id1346223662?k=20&m=1346223662&s=612x612&w=0&h=YjDmwfZ_8jOmJYktM6MNve77hghZXfCJ5d5CH6gQsjM=',
 	},
 	{
+		id: 3,
 		title: 'Copper Mountain',
 		pass: 'Ikon',
 		area: '2,465 acres',
 		elevation: '12,441 ft',
 		description:
-			'The trails below the tree line are classically Colorado - well designed fall line runs with rollers and compressions to keep it interesting, and long enough to scorch the quads of the most hardened ski aficionado. Above the tree line in the high alpine areas of Copper Ski Resort there are deep powder bowls, chutes, cornices, jumps and bumps. Snowboarders love the well designed terrain and layout at Copper Mountain Resort as it also bolsters one of the best terrain parks in the country, the official training center for Team USA',
+			'The trails below the tree line are classically Colorado - well designed fall line runs with rollers and compressions to keep it interesting, and long enough to scorch the quads of the most hardened ski aficionado. Above the tree line in the high alpine areas of Copper Ski Resort there are deep powder bowls, chutes, cornices, jumps and bumps. Snowboarders love the well designed terrain and layout at Copper Mountain Resort as it also bolsters one of the best terrain parks in the country, the official training center for Team USA.',
 		image_url:
 			'https://images.newschoolers.com/images/17/00/69/42/71/694271_1600w.jpeg',
 	},
 	{
+		id: 4,
 		title: 'Winter Park',
 		pass: 'Ikon',
 		area: '3,081 acres',
@@ -40,6 +44,7 @@ export const resortData = [
 			'https://media.istockphoto.com/photos/mountain-ski-lift-picture-id1206703038?k=20&m=1206703038&s=612x612&w=0&h=5CvwNnAVL-PkuLAxxLf_sqnhuMCyTQ79UWKuSc8xlYo=',
 	},
 	{
+		id: 5,
 		title: 'Vail',
 		pass: 'Epic',
 		area: '5,317 acres',

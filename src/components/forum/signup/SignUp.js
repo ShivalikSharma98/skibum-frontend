@@ -52,7 +52,7 @@ function SignUp() {
 						</div>
 					</form>
 					<p className='text-center'>
-						Do not use passwords associated with other accounts, passwords are currently not encrypted.
+						Do not use credentials associated with other accounts. Information is currently not encrypted.
 					</p>
 				</div>
 			</div>

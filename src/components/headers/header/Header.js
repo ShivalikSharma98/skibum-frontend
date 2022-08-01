@@ -6,10 +6,10 @@ import { LinkContainer } from 'react-router-bootstrap';
 function Header() {
 	return (
 		<div className='header'>
-			<Navbar collapseOnSelect bg='light' expand='lg'>
+			<Navbar collapseOnSelect className='nav' expand='lg'>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand>Skibum</Navbar.Brand>
+						<Navbar.Brand>⛷ Ski Bum 🏂</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>

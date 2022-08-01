@@ -42,6 +42,7 @@ function Posts() {
 				</LinkContainer>
 				<div className='posts-container'>
 					<h1>Forum</h1>
+					<p>Please take all necessary Avalanche precautions before visiting these locations. </p>
 					{posts.map((post) => (
 						<Card className='forum-cards' key={post.id}>
 							<Card.Header className='forum-cards-header'>
