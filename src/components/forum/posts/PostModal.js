@@ -1,23 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Modal, Button } from 'react-bootstrap';
+import { config } from '../../../Constants';
+import axios from 'axios';
 
-function PostModal({ show, setShow, handleClose, handleShow }) {
+function PostModal({
+	show,
+	setShow,
+	handleClose,
+	handleShow,
+	setPosts,
+	getPosts,
+}) {
+	const initialPost = {
+		username: '',
+		title: '',
+		difficulty: '',
+		start_location: '',
+		directions: '',
+		description: '',
+		image_url: '',
+	};
+	const [post, setPost] = useState(initialPost);
+	function handleChange(event) {
+		event.preventDefault();
+		setPost({ ...post, [event.target.id]: event.target.value });
+	}
+	function handleSubmit(event) {
+		event.preventDefault();
+		const newPost = { ...post };
+		const url = `${config.API_URL}/api/user/post`;
+		axios
+			.post(url, newPost)
+			.then((res) => {
+				setPost(initialPost);
+                getPosts()
+				handleClose();
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}
 
-    
 	return (
 		<>
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
 					<Modal.Title>Create Post</Modal.Title>
 				</Modal.Header>
-				<Form>
+				<Form onSubmit={handleSubmit}>
 					<Modal.Body>
 						<Form.Group className='mb-3'>
-							<Form.Label htmlFor='title'>Name:</Form.Label>
+							<Form.Label htmlFor='username'>Name:</Form.Label>
 							<Form.Control
 								id='username'
 								type='text'
 								placeholder='Your Name'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -27,6 +65,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								id='title'
 								type='text'
 								placeholder='Post Title'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -36,6 +75,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								id='difficulty'
 								type='select'
 								aria-label='Default select example'
+								onChange={handleChange}
 								required>
 								<option value='1'>Easy</option>
 								<option value='2'>Intermediate</option>
@@ -48,6 +88,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								id='start_location'
 								type='text'
 								placeholder='Longitude Latitude'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -57,6 +98,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								id='end_location'
 								type='text'
 								placeholder='Longitude Latitude'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -67,6 +109,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								as='textarea'
 								row={3}
 								placeholder='Directions'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -77,6 +120,7 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								as='textarea'
 								row={3}
 								placeholder='Description'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
@@ -86,12 +130,13 @@ function PostModal({ show, setShow, handleClose, handleShow }) {
 								id='image_url'
 								type='text'
 								placeholder='JPEG'
+								onChange={handleChange}
 								required
 							/>
 						</Form.Group>
 					</Modal.Body>
 					<Modal.Footer>
-						<Button type='button' variant='secondary'>
+						<Button type='button' variant='secondary' onClick={handleClose}>
 							Close
 						</Button>
 						<Button type='submit' variant='primary'>

@@ -70,7 +70,14 @@ function Posts() {
 					))}
 				</div>
 			</div>
-			<PostModal show={show} setShow={setShow} handleClose={handleClose} handleShow={handleShow} />
+			<PostModal
+				show={show}
+				setShow={setShow}
+				handleClose={handleClose}
+				handleShow={handleShow}
+				setPosts={setPosts}
+				getPosts={getPosts}
+			/>
 		</>
 	);
 }
