@@ -4,10 +4,13 @@ import Header from '../../headers/header/Header';
 import { config } from '../../../Constants';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
-import { LinkContainer } from 'react-router-bootstrap';
+import PostModal from './PostModal';
 
 function Posts() {
 	const [posts, setPosts] = useState([]);
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
 	function getPosts() {
 		const url = `${config.API_URL}/api/posts`;
@@ -32,6 +35,7 @@ function Posts() {
 					<h3 className='noposts'>
 						There are currently no posts on this forum
 					</h3>
+					<button onClick={handleShow}>Add Post</button>
 				</div>
 			</>
 		);
@@ -43,7 +47,7 @@ function Posts() {
 			<div className='posts'>
 				<div className='posts-container'>
 					<h1>Forum</h1>
-					<button>Add Post</button>
+					<button onClick={handleShow}>Add Post</button>
 					<p>
 						Please take all necessary Avalanche precautions before visiting
 						these locations.
@@ -66,6 +70,7 @@ function Posts() {
 					))}
 				</div>
 			</div>
+			<PostModal show={show} setShow={setShow} handleClose={handleClose} handleShow={handleShow} />
 		</>
 	);
 }
