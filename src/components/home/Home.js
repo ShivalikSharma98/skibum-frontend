@@ -19,9 +19,9 @@ function Home() {
 						<button className='button-49'>Weather</button>
 					</Link>
 				</div>
-				<div className='gallery-item'>
-					<Link to='/gallery'>
-						<button className='button-49'>Gallery</button>
+				<div className='about-item'>
+					<Link to='/about'>
+						<button className='button-49'>About</button>
 					</Link>
 				</div>
 				<div className='forum-item'>

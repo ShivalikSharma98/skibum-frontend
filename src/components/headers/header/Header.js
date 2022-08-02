@@ -9,7 +9,7 @@ function Header() {
 			<Navbar collapseOnSelect className='nav' expand='lg'>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand>⛷ Ski Bum 🏂</Navbar.Brand>
+						<Navbar.Brand>Ski Bum</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
@@ -17,23 +17,15 @@ function Header() {
 							<LinkContainer to='/'>
 								<Nav.Link>Home</Nav.Link>
 							</LinkContainer>
+							<LinkContainer to='/about'>
+								<Nav.Link>About</Nav.Link>
+							</LinkContainer>
 							<LinkContainer to='/resorts'>
 								<Nav.Link>Resorts</Nav.Link>
 							</LinkContainer>
-							<LinkContainer to='/weather'>
-								<Nav.Link>Weather</Nav.Link>
+							<LinkContainer to='/posts'>
+									<Nav.Link>Backcountry Forum</Nav.Link>
 							</LinkContainer>
-							<LinkContainer to='/gallery'>
-								<Nav.Link>Gallery</Nav.Link>
-							</LinkContainer>
-							<NavDropdown title='Backcountry Forum' id='basic-nav-dropdown'>
-								<LinkContainer to='/posts'>
-									<NavDropdown.Item>Forum</NavDropdown.Item>
-								</LinkContainer>
-								<LinkContainer to='/posts/login'>
-									<NavDropdown.Item>My Posts</NavDropdown.Item>
-								</LinkContainer>
-							</NavDropdown>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

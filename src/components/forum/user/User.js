@@ -2,7 +2,6 @@ import React from 'react';
 import './User.css';
 import { useParams } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { config } from '../../../Constants';
@@ -43,8 +42,10 @@ function User() {
 			<>
 				<Header />
 				<div className='posts'>
-					<h3 className='noposts'>Hi {username}, you currently have no posts.</h3>
-                    <button>Add Post</button>
+					<h3 className='noposts'>
+						Hi {username}, you currently have no posts.
+					</h3>
+					<button>Add Post</button>
 				</div>
 			</>
 		);

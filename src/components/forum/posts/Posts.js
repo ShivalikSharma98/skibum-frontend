@@ -29,7 +29,9 @@ function Posts() {
 			<>
 				<Header />
 				<div className='posts'>
-					<h3 className='noposts'>There are currently no posts on this forum</h3>
+					<h3 className='noposts'>
+						There are currently no posts on this forum
+					</h3>
 				</div>
 			</>
 		);
@@ -41,12 +43,10 @@ function Posts() {
 			<div className='posts'>
 				<div className='posts-container'>
 					<h1>Forum</h1>
-					<LinkContainer to='/posts/login'>
-						<button>Login</button>
-					</LinkContainer>
+					<button>Add Post</button>
 					<p>
 						Please take all necessary Avalanche precautions before visiting
-						these locations.{' '}
+						these locations.
 					</p>
 					{posts.map((post) => (
 						<Card className='forum-cards' key={post.id}>
