@@ -20,11 +20,14 @@ function Header() {
 							<LinkContainer to='/about'>
 								<Nav.Link>About</Nav.Link>
 							</LinkContainer>
+							<LinkContainer to='/weather'>
+								<Nav.Link>Weather</Nav.Link>
+							</LinkContainer>
 							<LinkContainer to='/resorts'>
 								<Nav.Link>Resorts</Nav.Link>
 							</LinkContainer>
 							<LinkContainer to='/posts'>
-									<Nav.Link>Backcountry Forum</Nav.Link>
+								<Nav.Link>Backcountry Forum</Nav.Link>
 							</LinkContainer>
 						</Nav>
 					</Navbar.Collapse>
