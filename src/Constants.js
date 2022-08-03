@@ -1,5 +1,5 @@
 const prod = {
-	API_URL: '',
+	API_URL: 'https://skibum-backend.herokuapp.com',
 };
 
 const dev = {
