@@ -20,9 +20,9 @@ function Header() {
 							<LinkContainer to='/about'>
 								<Nav.Link>About</Nav.Link>
 							</LinkContainer>
-							<LinkContainer to='/weather'>
+							{/* <LinkContainer to='/weather'>
 								<Nav.Link>Weather</Nav.Link>
-							</LinkContainer>
+							</LinkContainer> */}
 							<LinkContainer to='/resorts'>
 								<Nav.Link>Resorts</Nav.Link>
 							</LinkContainer>

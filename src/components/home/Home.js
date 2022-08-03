@@ -14,11 +14,11 @@ function Home() {
 						<button className='button-49'>Resorts</button>
 					</Link>
 				</div>
-				<div className='weather-item'>
+				{/* <div className='weather-item'>
 					<Link to='/weather'>
 						<button className='button-49'>Weather</button>
 					</Link>
-				</div>
+				</div> */}
 				<div className='about-item'>
 					<Link to='/about'>
 						<button className='button-49'>About</button>
