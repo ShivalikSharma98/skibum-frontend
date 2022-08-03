@@ -1,0 +1,43 @@
+.login {
+	display: flex;
+	flex-flow: column;
+    height: 100%;
+    width: 100%;
+	background-color: black;
+	background-image: url('https://media2.giphy.com/media/3ohs7T1ljes6v7EdFe/giphy.gif?cid=ecf05e47tl07smci9rayu8c5nu2eyuc02o7xqnsp30trwq7g&rid=giphy.gif&ct=s');
+	background-size: cover;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex: 1 1 auto;
+	flex-direction: column;
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border: 1px solid white;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+    color: white;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 278px;
+}
+.text-center {
+    color: white;
+}
