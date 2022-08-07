@@ -41,6 +41,16 @@ function Posts() {
 		);
 	}
 
+	function handleDelete(id) {
+		const url = `${config.API_URL}/api/post/${id}`;
+		axios
+			.delete(url)
+			.then(() => getPosts())
+			.catch((error) => {
+				console.log(error);
+			});
+	}
+
 	return (
 		<>
 			<Header />
@@ -55,8 +65,11 @@ function Posts() {
 					{posts.map((post) => (
 						<Card className='forum-cards' key={post.id}>
 							<Card.Header className='forum-cards-header'>
-								<h4>{post.title}</h4>
-								<h5>By: {post.username}</h5>
+								<div>
+									<h4>{post.title}</h4>
+									<h5>By: {post.username}</h5>
+								</div>
+								<button onClick={() => handleDelete(post.id)}>Delete</button>
 							</Card.Header>
 							<Card.Body>
 								<p>Difficulty: {post.difficulty}</p>
